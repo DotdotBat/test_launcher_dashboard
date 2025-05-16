@@ -1,0 +1,25 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "entry point": "app.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
+    "monocart-reporter": "^2.9.18"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.34.0",
+    "body-parser": "^2.2.0",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-basic-auth": "^1.2.1",
+    "path": "^0.12.7",
+    "playwright": "^1.52.0"
+  }
+}
