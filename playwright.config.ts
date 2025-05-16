@@ -24,12 +24,6 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ["line"],
-    [
-      "allure-playwright",
-      {
-        resultsDir: "allure-results",
-      },
-    ],
     ['monocart-reporter', {  
             name: "My Test Report",
             outputFile: './monocart-report/index.html'
