@@ -117,7 +117,7 @@ app.get('/run-tests', (req, res) => {
     testsRunTask.on('close', (code) => {
         sendEventToAll({ type: 'TEST_COMPLETE', code: code });
         //tests completed, so we can start generating the report
-        let npx_command = ['-c', 'echo "monocart reports"']//monocart report already generated, but we have to say something.
+        let npx_command = ['--version']//monocart report already generated, but we have to say something.
 
         if(isAllureAvailable){
             npx_command = ['allure', 'generate', 'allure-results', '--clean', '-o', 'allure-report']
@@ -136,8 +136,6 @@ app.get('/run-tests', (req, res) => {
         });
 
     });
-
-
    
 });
 
